@@ -61,12 +61,13 @@ while 1:
     totalTime = driver.find_element_by_class_name('vjs-duration-display')
     y = totalTime.text
     #每隔十秒检查是否播放完成
-    while x != y or x == '':#加入空字符串对付隐藏的进度条
+    while x != y or x == '':#加入空字符串对付隐藏的进度条，奇技淫巧23333
         time.sleep(10)
         y = totalTime.text
         x = currentTime.text
     #跳出iframe
     driver.switch_to.default_content()
+    #这里找到下一章按钮，连击两次（我课程的要求）
     nextChapter = driver.find_element_by_id('right')
     nextChapter.click()
     nextChapter.click()

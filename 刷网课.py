@@ -20,9 +20,6 @@ password.send_keys('XXXXXXXXXX')#密码
 
 tongyi_login = driver.find_element_by_id('login_submit')
 tongyi_login.click()
-#进入个人中心
-mySpace = driver.find_element_by_class_name('curLi')
-mySpace.click()
 #更改为自己网课的首页（从学在西电点进去）例如：http:/mooc2-ans.chaoxing.com/mycourse/stu?courseid=xxxx……
 driver.get("XXXXXXXXXXXX")#输入网址
 

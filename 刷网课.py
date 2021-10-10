@@ -46,7 +46,7 @@ while 1:
     iframe1 = driver.find_element_by_id('iframe')
     driver.switch_to.frame(iframe1)
 
-    iframe2 = driver.find_element_by_xpath('//*[@id="ext-gen1042"]/div/div/p/div/iframe')
+    iframe2 = driver.find_element_by_xpath('//*[@id="ext-gen1043"]/div/div/p/div/iframe')
     driver.switch_to.frame(iframe2)
     #播放按钮
     player = driver.find_element_by_class_name('vjs-big-play-button')
